@@ -1,0 +1,53 @@
+.w {
+  width: 1200px;
+  margin: 25px auto 0;
+  padding-top: 15px;
+}
+html,
+body {
+  height: 100%;
+}
+
+.pagination {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.dialog_form {
+  box-sizing: border-box;
+  .el-dialog {
+    margin-top: 10vh !important;
+    max-height: 80vh;
+    box-sizing: border-box;
+    overflow: auto;
+    .el-dialog__header {
+      border-bottom: 1px solid #eee;
+    }
+    .el-dialog__body {
+      .el-form--inline {
+        .el-form-item {
+          width: 50%;
+          margin-right: 0;
+          .el-form-item__content {
+            width: calc(100% - 120px);
+            .el-select {
+              width: 100%;
+            }
+            .ql-editor {
+              max-height: 400px;
+            }
+          }
+        }
+      }
+    }
+    .el-dialog__footer {
+      border-top: 1px solid #eee;
+    }
+  }
+}
+
+.el-table th > .cell {
+  color: #000 !important;
+  font-weight: 500;
+}
